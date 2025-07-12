@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Note Taker",
+  "version": "1.0",
+  "description": "A simple Chrome extension to take notes and upload them to AWS S3.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "options_page": "options.html",
+  "web_accessible_resources": [
+    {
+      "resources": ["aws-sdk-2.1563.0.min.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
+
